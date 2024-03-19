@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "ICPKartFinal_backend": {
+      "main": "src/ICPKartFinal_backend/main.mo",
+      "type": "motoko"
+    },
+    "ICPKartFinal_frontend": {
+      "dependencies": [
+        "ICPKartFinal_backend"
+      ],
+      "source": [
+        "src/ICPKartFinal_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "ICPKartFinal_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
